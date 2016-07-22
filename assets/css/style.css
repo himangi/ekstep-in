@@ -1,5 +1,17 @@
 .wrapper{font-family:Georgia, Arial, Helvetica;font-size:18px;}
 a.btn{text-transform:uppercase;background:#19435B;border-radius:0px;padding: 10px 30px; border:0px;font-family: 'Roboto', sans-serif;margin:45px 0 100px;width:100%;max-width:327px;}
+.btn-bordered{
+	border: 2px #fff solid;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    color: #fff;
+}
+.btn-bordered:hover,.btn-bordered:focus{
+    color: #333;
+    background:#f2f2f2; border-color:#f2f2f2;
+    text-decoration:none;
+}
 img{max-width:100%; width:auto;}
 hr{border-color:#19435B !important;}
 .wrap{width: auto;    clear: both;}
@@ -24,7 +36,8 @@ hr{border-color:#19435B !important;}
     transition: 1s;
 }
 h1{font-size: 51px; }
-h2{font-size:36px;font-family:Georgia, Arial, Helvetica;color:#19435A;    margin-bottom:30px;}
+h2{font-size:36px;color:#19435A;    margin-bottom:30px;}
+h3{font-size:30px;}
 #logo{position:absolute;z-index:99;min-height:109px; max-height:199px;}
 #header{background:#C7312C; margin-top:53px;overflow:hidden;}
 #header ul{margin:0 15px 0 0;}
@@ -96,26 +109,29 @@ max-width: 1280px;
 .blue { background: url('../../images/blue.png') no-repeat; }
 
 /*Other pages*/
-.header.grey{    background: #f1f1f1;
-    margin-top: 53px;
-    overflow: hidden;
+body.background {background: url('../../images/bg-1.jpg') repeat-y;background-size:100%;}
+body.background div{color:#fff; font-family: 'Roboto', sans-serif;}
+body.background #header{
+    overflow: hidden; background:none;
     height: 146px;
 }
-.greybox{background:#f1f1f1;padding:20px 30px;min-height:400px;font-family: 'Roboto', sans-serif;}
+
 
 
 @media (max-width:991px){
 .nav-tabs li a span,.nav-tabs li.active a span{font-size:20px;}
 }
-@media (max-width:768px){
+@media (min-width:768px){
 .container{width:auto;}
+}
+@media (max-width:768px){
 #logo img{width:55%;}
 #header ul li{margin: 60px 0 10px;}
 .nav-tabs {width:100%;}
 .nav-tabs li a,.nav>li>a:focus, .nav>li>a:hover,.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {height:145px;max-width:105px;}
 .nav-tabs li a span,.nav-tabs li.active a span{font-size:15px;}
 #community img{  max-width:80%;}
-.header.grey{height:80px;}
+body.background #header{height:100px;}
 }
 @media (max-width:600px){
 
