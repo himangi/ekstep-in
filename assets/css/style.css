@@ -39,11 +39,13 @@ h1{font-size: 51px; }
 h2{font-size:36px;color:#19435A;    margin-bottom:30px;}
 h3{font-size:30px;}
 #logo{position:absolute;z-index:99;min-height:109px; max-height:199px;}
-#header{background:#C7312C; margin-top:53px;overflow:hidden;}
+#header{background:#C7312C; margin-top:53px;overflow:hidden;margin-left:186px;padding: 0 10px;}
 #header ul{margin:0 15px 0 0;}
 #header ul li{margin:60px 0px 61px;color:#fff;padding-left: 3px;padding-right: 3px;    min-width: 40px; text-align: center;}
 #header ul li.dummy{display:none;}
 #header ul li a{color:#fff;font-family: 'Roboto', sans-serif; font-weight:500;font-size:/*24px*/16px;}
+#header ul li.facebook a span.white, #header ul li.twitter a span.white{display:block;}
+#header ul li.facebook a span.grey, #header ul li.twitter a span.grey{display:none;}
 
 #about {background:#C7312C;padding:180px 0 90px;}
 #about h1{width:87%; margin:0 auto; color:#fff;line-height:71px;}
@@ -109,36 +111,44 @@ max-width: 1280px;
 .blue { background: url('../../images/blue.png') no-repeat; }
 
 /*Other pages*/
-body.background {background: url('../../images/bg-1.jpg') repeat-y;background-size:100%;}
+body.background .text-grey{color:#333;}
+body.background .wrapper{background: url('../../images/background/bg-2.jpg') no-repeat 0 155px; background-size:100%;}
 body.background div{color:#fff; font-family: 'Roboto', sans-serif;}
 body.background #header{
     overflow: hidden; background:none;
     height: 146px;
 }
-
+body.background #header ul li a,body.background #header ul li{color:#333;}
+body.background #header ul li.facebook a span.white,body.background #header ul li.twitter a span.white{display:none;}
+body.background #header ul li.facebook a span.grey, body.background #header ul li.twitter a span.grey{display:block;}
+body.background .pageheading{margin-top:37%;}
 
 
 @media (max-width:991px){
+body.background .pageheading{margin-top:30%;}
 .nav-tabs li a span,.nav-tabs li.active a span{font-size:20px;}
+#header ul li{margin: 20px 0 10px;}
 }
 @media (min-width:768px){
 .container{width:auto;}
 }
 @media (max-width:768px){
 #logo img{width:55%;}
-#header ul li{margin: 60px 0 10px;}
+#header{margin-top:0;height:100px;margin-left:102px;}
+#header ul li{margin: 10px 0 10px;}
 .nav-tabs {width:100%;}
 .nav-tabs li a,.nav>li>a:focus, .nav>li>a:hover,.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {height:145px;max-width:105px;}
 .nav-tabs li a span,.nav-tabs li.active a span{font-size:15px;}
 #community img{  max-width:80%;}
-body.background #header{height:100px;}
+body.background .wrapper{background: url('../../images/background/bg-2.jpg') no-repeat 0 90px;background-size:100%;}
+body.background .pageheading{margin-top:20%;}
 }
 @media (max-width:600px){
-
 #about{padding-top:40px;}
 #about h1 { font-size: 25px; line-height: inherit;}
 .nav-tabs li a span,.nav-tabs li.active a span{font-size:13px;}
 .nav-tabs li a,.nav>li>a:focus, .nav>li>a:hover,.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {height: 95px;    max-width: 90px;}
+body.background .pageheading{margin-top:10%;}
 }
 
 .fade{
