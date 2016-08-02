@@ -136,6 +136,8 @@ body.background #header ul li.facebook a span.white,body.background #header ul l
 body.background #header ul li.facebook a span.grey, body.background #header ul li.twitter a span.grey{display:block;}
 body.background .pageheading{margin-top:37%;}
 
+body.grey{ background:#f1f1f1; padding:5px 10px;}
+
 
 @media (max-width:991px){
 body.background .pageheading{margin-top:30%;}
