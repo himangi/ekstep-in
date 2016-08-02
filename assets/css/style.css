@@ -1,4 +1,4 @@
-.wrapper{font-family:Georgia, Arial, Helvetica;font-size:18px;}
+.wrapper{font-family:Georgia, Arial, Helvetica;font-size:18px;    overflow-x: hidden;}
 a.btn{text-transform:uppercase;background:#19435B;border-radius:0px;padding: 10px 30px; border:0px;font-family: 'Roboto', sans-serif;margin:45px 0 100px;width:100%;max-width:327px;}
 .btn-bordered{
 	border: 2px #fff solid;
@@ -46,6 +46,18 @@ h3{font-size:30px;}
 #header ul li a{color:#fff;font-family: 'Roboto', sans-serif; font-weight:500;font-size:/*24px*/16px;}
 #header ul li.facebook a span.white, #header ul li.twitter a span.white{display:block;}
 #header ul li.facebook a span.grey, #header ul li.twitter a span.grey{display:none;}
+#header .collapsible-menu{margin:0;position:relative;font-family: 'Roboto', sans-serif;}
+#header .collapsible-menu button{background:#333;color:#fff;}
+#header .collapsible-menu ul li{margin:0;text-align:left;list-style: none;}
+#header #menu_collapse{
+	background:#333;color:#fff;    margin: 0;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    top: 34px;
+    padding:10px;
+    }
+#header .collapsible-menu ul li a{color:#fff !important; }
 
 #about {background:#C7312C;padding:180px 0 90px;}
 #about h1{width:87%; margin:0 auto; color:#fff;line-height:71px;}
@@ -111,11 +123,12 @@ max-width: 1280px;
 .blue { background: url('../../images/blue.png') no-repeat; }
 
 /*Other pages*/
+body.background .text-white p{color:#333;    margin-top: 160px;   margin-bottom: 50px;}
 body.background .text-grey{color:#333;}
 body.background .wrapper{background: url('../../images/background/bg-2.jpg') no-repeat 0 155px; background-size:100%;}
 body.background div{color:#fff; font-family: 'Roboto', sans-serif;}
 body.background #header{
-    overflow: hidden; background:none;
+    /*overflow: hidden;*/ background:none;
     height: 146px;
 }
 body.background #header ul li a,body.background #header ul li{color:#333;}
@@ -129,19 +142,25 @@ body.background .pageheading{margin-top:30%;}
 .nav-tabs li a span,.nav-tabs li.active a span{font-size:20px;}
 #header ul li{margin: 20px 0 10px;}
 }
-@media (min-width:768px){
+@media (min-width:769px){
 .container{width:auto;}
+#header .collapsible-menu{display:none;}
+body.background .text-white p{color:#fff;margin-top:0;margin-bottom:100px;}
 }
 @media (max-width:768px){
+.container{width:auto;margin: 0;  padding: 0 20px;}
 #logo img{width:55%;}
-#header{margin-top:0;height:100px;margin-left:102px;}
-#header ul li{margin: 10px 0 10px;}
+#header{margin-top:20px;height:100px;margin-left:0;overflow:visible;padding-top: 30px;}
+#header #menu{display:none;}
 .nav-tabs {width:100%;}
 .nav-tabs li a,.nav>li>a:focus, .nav>li>a:hover,.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {height:145px;max-width:105px;}
 .nav-tabs li a span,.nav-tabs li.active a span{font-size:15px;}
 #community img{  max-width:80%;}
 body.background .wrapper{background: url('../../images/background/bg-2.jpg') no-repeat 0 90px;background-size:100%;}
 body.background .pageheading{margin-top:20%;}
+body.background .text-white p {margin-top:115px;}
+#header ul li.facebook a span.white, #header ul li.twitter a span.white,
+body.background #header ul li.facebook a span.white, body.background #header ul li.twitter a span.white{display:block;}
 }
 @media (max-width:600px){
 #about{padding-top:40px;}
@@ -149,6 +168,11 @@ body.background .pageheading{margin-top:20%;}
 .nav-tabs li a span,.nav-tabs li.active a span{font-size:13px;}
 .nav-tabs li a,.nav>li>a:focus, .nav>li>a:hover,.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {height: 95px;    max-width: 90px;}
 body.background .pageheading{margin-top:10%;}
+body.background .text-white p {margin-top:60px;}
+}
+@media (max-width:523px){
+body.background .pageheading{margin-top:10%;font-size: 25px;}
+body.background .text-white p {margin-top:60px;}
 }
 
 .fade{
