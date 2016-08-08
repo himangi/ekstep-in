@@ -32,6 +32,31 @@
 		<script src="assets/js/jquery-1.12.3.min.js"></script>
 		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
+		<script>
+			$(document).ready(function(){
+				// hide #back-top first
+				$("#back-top").hide();
+				// fade in #back-top
+				$(function () {
+					$(window).scroll(function () {
+						if ($(this).scrollTop() > 100) {
+							$('#back-top').fadeIn();
+						} else {
+							$('#back-top').fadeOut();
+						}
+					});
+
+					// scroll body to 0px on click
+					$('#back-top a').click(function () {
+						$( "li.item" ).removeClass( "current" );
+						$('body,html').animate({
+							scrollTop: 0
+						}, 800);
+						return false;
+					});
+				});
+			});
+		</script>
         <!-- Piwik-->
 		<script type="text/javascript">
 		var _paq = _paq || [];
@@ -50,6 +75,7 @@
 		<!-- End Piwik Code -->
 	</head>
 	<body class="background">
+		<p id="back-top"><a href="#top"><img src="images/up-arrow.png"  alt="Back to Top"></a></p>
 		<div class="wrapper">
 			<div class="container">
 				<div class="row">
@@ -86,26 +112,32 @@
 							<p>To help extend access to quality primary education to <br/> millions of children over the next 5 years.</p>
 						</div>
 					</div>
-					<div class="col-md-12 col-xs-12 text-grey">
-						<p>EkStep Foundation ("EkStep") is a non-for-profit foundation that aims to extend learning opportunities to millions of Indian children through a collaborative, universal platform that facilitates creation and consumption of educational content. EkStep is founded by Nandan Nilekani, Rohini Nilekani and Shankar Maruwada in collaboration with the leadership team that was instrumental in developing the Aadhaar project.</p>
+					<div class="col-md-12 col-xs-12">
+						<div class="row">
+							<div class="col-sm-4 col-md-3 sidemenu">
+								<span class="sidemenu_title">Current Positions</span>
+								<ul>
+									<li><a href="images/job-profiles/Product-Manager_Mobile-Web.pdf">Product Manager (Mobile)</a></li>
+									<li><a href="images/job-profiles/Product-Manager_Mobile-Web.pdf">Product Manager (Web)</a></li>
+									<li><a href="images/job-profiles/Product-Manager_Learning-Sciences.pdf">Product Manager (Learning Sciences)</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-8 col-md-9 text-grey">
+								<p>EkStep Foundation ("EkStep") is a non-for-profit foundation that aims to extend learning opportunities to millions of Indian children through a collaborative, universal platform that facilitates creation and consumption of educational content. EkStep is founded by Nandan Nilekani, Rohini Nilekani and Shankar Maruwada in collaboration with the leadership team that was instrumental in developing the Aadhaar project.</p>
 
-						<p><strong>Role of Product Manager at EkStep</strong></p>
+								<p><strong>Role of Product Manager at EkStep</strong></p>
 
-						<p>At EkStep, we have an educational platform focused on developing the digital tools and infrastructure to enable access to learning opportunities for millions of young children at the primary level in India., The users of EkStep tools and products will be creators of educational content who will engage on the EkStep portal and young learners who will access the content on a mobile application (Android).  The portal and application enables the learner and their ecosystem to discover and consume educational content. The EkStep Platform is built to infer learner's preferences and learning levels and in turn to continuously improve content and to make meaningful recommendations for the learner.</p>
+								<p>At EkStep, we have an educational platform focused on developing the digital tools and infrastructure to enable access to learning opportunities for millions of young children at the primary level in India., The users of EkStep tools and products will be creators of educational content who will engage on the EkStep portal and young learners who will access the content on a mobile application (Android).  The portal and application enables the learner and their ecosystem to discover and consume educational content. The EkStep Platform is built to infer learner's preferences and learning levels and in turn to continuously improve content and to make meaningful recommendations for the learner.</p>
 
-						<p>The Product Management team at EkStep works closely with our engineering partners to guide products from conception to launch. A Product Manager at EkStep bridges the technical and learning worlds and they design products for the end user and will have to work closely with a cross section of teams such as learning science, legal, design, initiatives and others. A key skill of the product manager is to function in an action oriented environment and the ability to break down complex problems into steps that drive product development at speed. A Product Manager at EkStep, is driven by the passion to make a difference and fulfil the societal mission that is inspired by the committed ecosystem driving education outcomes in the country.  Working for a not for profit initiative the product manager is fuelled by the impact of his/her work to enhance learning opportunities for children.</p>
+								<p>The Product Management team at EkStep works closely with our engineering partners to guide products from conception to launch. A Product Manager at EkStep bridges the technical and learning worlds and they design products for the end user and will have to work closely with a cross section of teams such as learning science, legal, design, initiatives and others. A key skill of the product manager is to function in an action oriented environment and the ability to break down complex problems into steps that drive product development at speed. A Product Manager at EkStep, is driven by the passion to make a difference and fulfil the societal mission that is inspired by the committed ecosystem driving education outcomes in the country.  Working for a not for profit initiative the product manager is fuelled by the impact of his/her work to enhance learning opportunities for children.</p>
 
-						<p>Open Positions - Product Managers (3 positions)
-						<ul>
-						<li><a href="images/job-profiles/Product-Manager_Mobile-Web.pdf">Product Manager (Mobile)</a></li>
-						<li><a href="images/job-profiles/Product-Manager_Mobile-Web.pdf">Product Manager (Web)</a></li>
-						<li><a href="images/job-profiles/Product-Manager_Learning-Sciences.pdf">Product Manager (Learning Sciences)</a></li>
-						</ul>
+								<p>Location -  Bangalore</p>
 
-						<p>Location -  Bangalore</p>
+								<p>Please send your resume with cover letter to <a href="mailto:info@ekstep.org">info@ekstep.org</a> with subject title "Product Manager - Mobile/Web/Learning Sciences".</p>
+								<p>&nbsp;</p>
+							</div>
+						</div>
 
-						<p>Please send your resume with cover letter to <a href="mailto:info@ekstep.org">info@ekstep.org</a> with subject title "Product Manager - Mobile/Web/Learning Sciences".</p>
-						<p>&nbsp;</p>
 					</div>
 				</div>
 

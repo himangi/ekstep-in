@@ -41,7 +41,7 @@ h3{font-size:30px;}
 #logo{position:absolute;z-index:99;min-height:109px; max-height:199px;}
 #header{background:#C7312C; margin-top:53px;overflow:hidden;margin-left:186px;padding: 0 10px;}
 #header ul{margin:0 15px 0 0;}
-#header ul li{margin:60px 0px 61px;color:#fff;padding-left: 3px;padding-right: 3px;    min-width: 40px; text-align: center;}
+#header ul li{margin:60px 0px 61px;color:#fff;padding-left: 3px;padding-right: 3px;    min-width: 34px; text-align: center;}
 #header ul li.dummy{display:none;}
 #header ul li a{color:#fff;font-family: 'Roboto', sans-serif; font-weight:500;font-size:/*24px*/16px;}
 #header ul li.facebook a span.white, #header ul li.twitter a span.white{display:block;}
@@ -122,60 +122,76 @@ max-width: 1280px;
 .active .blue{ background: url('../../images/blue-active.png') no-repeat;  }
 .blue { background: url('../../images/blue.png') no-repeat; }
 
+div.sidemenu,body.background div.sidemenu{color:#333;}
+div.sidemenu .sidemenu_title{font-weight:bold;}
+div.sidemenu ul{padding:0;}
+div.sidemenu ul li{list-style:none;background:#f2f2f2;padding:10px;margin:10px 0;}
+div.sidemenu a{color:#333;}
+
 /*Other pages*/
-body.background .text-white p{color:#333;    margin-top: 160px;   margin-bottom: 50px;}
+body.background .text-white p{color:#333;    margin-top: 140px;   margin-bottom: 50px;}
 body.background .text-grey{color:#333;}
-body.background .wrapper{background: url('../../images/background/bg-2.jpg') no-repeat 0 155px; background-size:100%;}
+body.background .wrapper{background: url('../../images/background/bg-2.jpg') no-repeat 0 129px; background-size:100%;}
 body.background div{color:#fff; font-family: 'Roboto', sans-serif;}
 body.background #header{
     /*overflow: hidden;*/ background:none;
-    height: 146px;
+    height:100px;margin-left:0;
 }
+body.background #header ul li{margin:20px 0 10px;}
 body.background #header ul li a,body.background #header ul li{color:#333;}
 body.background #header ul li.facebook a span.white,body.background #header ul li.twitter a span.white{display:none;}
 body.background #header ul li.facebook a span.grey, body.background #header ul li.twitter a span.grey{display:block;}
-body.background .pageheading{margin-top:37%;}
-
+body.background #logo {max-width: 121px !important;}
+body.background .pageheading{margin-top:8%; font-weight:bold;}
 body.grey{ background:#f1f1f1; padding:5px 10px;}
 
+@media (max-width:523px){
+body.background .pageheading{margin-top:10%;font-size: 25px;}
+}
 
-@media (max-width:991px){
-body.background .pageheading{margin-top:30%;}
-.nav-tabs li a span,.nav-tabs li.active a span{font-size:20px;}
-#header ul li{margin: 20px 0 10px;}
-}
-@media (min-width:769px){
-.container{width:auto;}
-#header .collapsible-menu{display:none;}
-body.background .text-white p{color:#fff;margin-top:0;margin-bottom:100px;}
-}
-@media (max-width:768px){
-.container{width:auto;margin: 0;  padding: 0 20px;}
-#logo img{width:55%;}
-#header{margin-top:20px;height:100px;margin-left:0;overflow:visible;padding-top: 30px;}
-#header #menu{display:none;}
-.nav-tabs {width:100%;}
-.nav-tabs li a,.nav>li>a:focus, .nav>li>a:hover,.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {height:145px;max-width:105px;}
-.nav-tabs li a span,.nav-tabs li.active a span{font-size:15px;}
-#community img{  max-width:80%;}
-body.background .wrapper{background: url('../../images/background/bg-2.jpg') no-repeat 0 90px;background-size:100%;}
-body.background .pageheading{margin-top:20%;}
-body.background .text-white p {margin-top:115px;}
-#header ul li.facebook a span.white, #header ul li.twitter a span.white,
-body.background #header ul li.facebook a span.white, body.background #header ul li.twitter a span.white{display:block;}
-}
 @media (max-width:600px){
 #about{padding-top:40px;}
 #about h1 { font-size: 25px; line-height: inherit;}
 .nav-tabs li a span,.nav-tabs li.active a span{font-size:13px;}
 .nav-tabs li a,.nav>li>a:focus, .nav>li>a:hover,.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {height: 95px;    max-width: 90px;}
 body.background .pageheading{margin-top:10%;}
-body.background .text-white p {margin-top:60px;}
 }
-@media (max-width:523px){
-body.background .pageheading{margin-top:10%;font-size: 25px;}
-body.background .text-white p {margin-top:60px;}
+
+@media (max-width:768px){
+.container{width:auto;margin: 0;  padding: 0 20px;}
+#logo img{width:55%;}
+#header{margin-top:20px;overflow:visible;padding-top: 30px;}
+#header #menu{display:none;}
+.nav-tabs {width:100%;}
+.nav-tabs li a,.nav>li>a:focus, .nav>li>a:hover,.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {height:145px;max-width:105px;}
+.nav-tabs li a span,.nav-tabs li.active a span{font-size:15px;}
+#community img{  max-width:80%;}
+body.background .wrapper{background: url('../../images/background/bg-2.jpg') no-repeat 0 90px;background-size:100%;}
+body.background .pageheading{margin-top:0;}
+body.background .text-white p {margin-top:115px !important;color:#333;}
+#header ul li.facebook a span.white, #header ul li.twitter a span.white,
+body.background #header ul li.facebook a span.white, body.background #header ul li.twitter a span.white{display:block;}
 }
+@media (min-width:769px){
+.container{width:auto;}
+#header .collapsible-menu{display:none;}
+body.background .header{height: 146px; margin-left:120px;}
+body.background .pageheading{margin-top:2%;}
+body.background .text-white p{color:#fff;margin-bottom:100px;}
+}
+@media (max-width:991px){
+.nav-tabs li a span,.nav-tabs li.active a span{font-size:20px;}
+#header ul li{margin: 20px 0 10px;}
+body.background .pageheading{margin-top:3%;}
+body.background .text-white p{margin-top:40px;}
+}
+@media (min-width:1180px){
+body.background .pageheading{margin-top:11%;}
+}
+@media (min-width:1600px){
+body.background .pageheading{margin-top:15%;}
+}
+
 
 .fade{
 	animation-name: slideLeft;
