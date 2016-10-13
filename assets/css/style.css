@@ -35,7 +35,7 @@ hr{border-color:#19435B !important;}
     -moz-transition: 1s;
     transition: 1s;
 }
-h1{font-size: 51px; }
+h1{font-size: 51px; font-family: 'Roboto', sans-serif;}
 h2{font-size:36px;color:#19435A;    margin-bottom:30px;}
 h3{font-size:30px;}
 #logo{position:absolute;z-index:99;min-height:109px; max-height:199px;}
@@ -56,11 +56,12 @@ h3{font-size:30px;}
     right: 0;
     top: 34px;
     padding:10px;
+    z-index: 99;
     }
 #header .collapsible-menu ul li a{color:#fff !important; }
 
 #about {background:#C7312C;padding:180px 0 90px;}
-#about h1{width:87%; margin:0 auto; color:#fff;line-height:71px;}
+#about h1{width:87%; margin:0 auto; color:#fff;line-height:71px;font-family:Georgia, Arial, Helvetica;}
 #approch{color:#19435A;text-align:center;padding:120px 0 0;}
 #approch > p{width:87%; margin:20px auto; line-height:46px;}
 #approch > p.lead{font-size:26px;margin-bottom:100px;}
@@ -133,10 +134,7 @@ body.background .text-white p{color:#333;    margin-top: 140px;   margin-bottom:
 body.background .text-grey{color:#333;}
 body.background .wrapper{background: url('../../images/background/bg-2.jpg') no-repeat 0 129px; background-size:100%;}
 body.background div{color:#fff; font-family: 'Roboto', sans-serif;}
-body.background #header{
-    /*overflow: hidden;*/ background:none;
-    height:100px;margin-left:0;
-}
+body.background #header{background:none; height:100px;margin-left:0;}
 body.background #header ul li{margin:20px 0 10px;}
 body.background #header ul li a,body.background #header ul li{color:#333;}
 body.background #header ul li.facebook a span.white,body.background #header ul li.twitter a span.white{display:none;}
@@ -144,6 +142,22 @@ body.background #header ul li.facebook a span.grey, body.background #header ul l
 body.background #logo {max-width: 121px !important;}
 body.background .pageheading{margin-top:8%; font-weight:bold;}
 body.grey{ background:#f1f1f1; padding:5px 10px;}
+body.background-plain .wrapper{background:none;}
+body.background-plain #header{background:none; height:100px;margin-left:0;}
+body.background-plain #header ul li{margin:20px 0 10px;}
+body.background-plain #header ul li a,body.background-plain #header ul li{color:#333;}
+body.background-plain #header ul li.facebook a span.white,body.background-plain #header ul li.twitter a span.white{display:none;}
+body.background-plain #header ul li.facebook a span.grey, body.background-plain #header ul li.twitter a span.grey{display:block;}
+body.background-plain #logo {max-width: 121px !important;}
+body.background-plain .pageheading{margin-top:8%; font-weight:bold;}
+
+.tutorial-inner{background: #f3f3f3; padding: 20px;height: 320px; margin: 10px 0;}
+.tutorial-inner .item-image{padding:30px 0;width: 100%;text-align: center; height: 145px;margin: 0;}
+.tutorial-inner .item-image img{max-height:75px;}
+.tutorial-inner .media-title{width:100%; border-top: 1px solid #ccc;padding:10px;display:block;/*overflow: hidden; text-overflow: ellipsis;white-space:nowrap;*/ color:#737373;}
+.tutorial-inner .media-title a{ color:#737373;}
+.tutorial-inner .media-description{ color:#737373;font-size:75%;margin: 0 10px;display: block;}
+
 
 @media (max-width:523px){
 body.background .pageheading{margin-top:10%;font-size: 25px;}
@@ -170,7 +184,8 @@ body.background .wrapper{background: url('../../images/background/bg-2.jpg') no-
 body.background .pageheading{margin-top:0;}
 body.background .text-white p {margin-top:115px !important;color:#333;}
 #header ul li.facebook a span.white, #header ul li.twitter a span.white,
-body.background #header ul li.facebook a span.white, body.background #header ul li.twitter a span.white{display:block;}
+body.background #header ul li.facebook a span.white, body.background #header ul li.twitter a span.white,
+body.background-plain #header ul li.facebook a span.white, body.background-plain #header ul li.twitter a span.white{display:block;}
 }
 @media (min-width:769px){
 .container{width:auto;}
