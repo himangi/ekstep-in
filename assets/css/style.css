@@ -151,9 +151,9 @@ body.background-plain #header ul li.facebook a span.grey, body.background-plain 
 body.background-plain #logo {max-width: 121px !important;}
 body.background-plain .pageheading{margin-top:8%; font-weight:bold;}
 
-.tutorial-inner{background: #f3f3f3; padding: 20px;height: 320px; margin: 10px 0;}
-.tutorial-inner .item-image{padding:10px 0;width: 100%;text-align: center; height: 145px;margin: 0;}
-.tutorial-inner .item-image img{max-height:125px;}
+.tutorial-inner{background: #f3f3f3; padding: 20px;height: 340px; margin: 10px 0;}
+.tutorial-inner .item-image{padding:10px 0;width: 100%;text-align: center; height: 165px;margin: 0;}
+.tutorial-inner .item-image img{max-height:145px;}
 .tutorial-inner .media-title{width:100%; border-top: 1px solid #ccc;padding:10px;display:block;/*overflow: hidden; text-overflow: ellipsis;white-space:nowrap;*/ color:#737373;}
 .tutorial-inner .media-title a{ color:#737373;}
 .tutorial-inner .media-description{ color:#737373;font-size:75%;margin: 0 10px;display: block;}
